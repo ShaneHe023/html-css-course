@@ -8,6 +8,7 @@
 body{
     font-family: sans-serif;
     border-top: 10px solid #1098ad;
+    position: relative;
 }
 
 .container{
@@ -15,6 +16,7 @@ body{
     /* margin-left: auto;
     margin-right: auto; */
     margin: 0 auto;
+    position: relative;
 }
 
 .main-header{
@@ -23,7 +25,7 @@ body{
     padding-left: 40px;
     padding-right: 40px; */
     padding: 20px 40px;
-    margin-top: 60px;
+    margin: 60px;
     height: 80px;
 }
 
@@ -56,6 +58,8 @@ h1{
 h2 {
     font-size: 40px;
     margin-bottom: 30px;
+    position: relative;
+    /* background-color: orange; */
 }
 h3 {
     font-size: 30px;
@@ -149,4 +153,33 @@ a:active{
 
 footer p {
     color: green !important;
+}
+
+.like{
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+h1::first-letter {
+    font-stretch: normal;
+    margin-right: 5px;
+}
+
+h2::after{
+    content: "TOP";
+    background-color: #ffe70e;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+}
+h3 + p::first-line {
+    color: red;
 }

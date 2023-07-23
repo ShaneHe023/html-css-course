@@ -4,7 +4,7 @@
 }
 body{
     font-family:sans-serif;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .container{
@@ -14,6 +14,20 @@ body{
 
 .product{
     border: 4px solid black;
+    position: relative;
+}
+
+.sale{
+    font-size: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background: red;
+    padding: 5px 15px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    letter-spacing: 2px;
 }
 h1,h2,h3{
     text-transform: uppercase;
@@ -22,7 +36,14 @@ h1,h2,h3{
 h2{
     text-align: center;
     background-color: #f7f7f7;
+    font-size: 20px;
+    font-style: bold;
+    padding: 10px;
     
+}
+
+p {
+    margin-bottom: 20px;
 }
 .not-em{
     color: #777;
@@ -31,12 +52,12 @@ h2{
     text-transform: uppercase;
     font-style: bold;
     font-size: small;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .more-info:link, .more-info:visited{
     color: #000;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .more-info:hover, .more-info:active{
     text-decoration: none;
@@ -77,3 +98,33 @@ h2{
     background: #fff;
     cursor: pointer;
 } 
+
+svg {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#box0{
+    fill: black;
+}
+
+#box1{
+    fill: blue;
+}
+
+#box2{
+    fill: red;
+}
+
+#box3{
+    fill: orange;
+}
+
+#box4{
+    fill: greenyellow;
+}
+
+#box5{
+    fill: brown;
+}
