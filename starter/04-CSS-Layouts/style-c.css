@@ -37,6 +37,7 @@ h1,h2,h3{
     text-transform: uppercase;
     font-style: bold;
 }
+
 h2{
     text-align: center;
     background-color: #f7f7f7;
@@ -57,12 +58,10 @@ h2{
     text-transform: uppercase;
     font-style: bold;
     font-size: small;
-    /* margin-bottom: 20px; */
 }
 
 .more-info:link, .more-info:visited{
     color: #000;
-    /* margin-top: 20px; */
 }
 .more-info:hover, .more-info:active{
     text-decoration: none;
@@ -85,8 +84,10 @@ h2{
     margin-bottom: 10px;
 }
 
-.product-description{
-    clear:both;
+.product-price{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
 .add-cart{
@@ -108,7 +109,7 @@ h2{
 } 
 
 svg {
-    display: block;
+    display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -137,24 +138,24 @@ svg {
     fill: brown;
 }
 
-.price {
-    float: left;
-}
-
 .product-img {
-    float: left;
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    flex: 1;
 }
 
 .left-box {
-    float: left;
-    width: 243px;
-    padding-top: 20px;
+    flex: 1;
+    margin-top: 20px;
 }
 
 .right-box {
-    float: right;
-    width: 243px;
+    flex: 1;
     line-height: 1;
     margin-bottom: 10px;
+}
+
+.cont {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
