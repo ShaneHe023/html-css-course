@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Challenge</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        gap: 12px;
+      }
+
+      .btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn:hover,
+      .btn--current {
+        background-color: #087f5b;
+        color: white;
+      }
+
+      .btn--normal {
+        color: #343a40;
+      }
+      .btn--left {
+        border: 2px solid #087f5b;
+        color: #087f5b;
+      }
+
+      .btn--right {
+        border: 2px solid #087f5b;
+        color: #087f5b;
+      }
+
+      .esc {
+        transform: translateY(40%);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn btn--left">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5 8.25 12l7.5-7.5"
+        />
+      </svg>
+    </button>
+
+    <button class="btn btn--normal">1</button>
+    <button class="btn btn--normal">2</button>
+    <button class="btn btn--current">3</button>
+    <button class="btn btn--normal">4</button>
+    <button class="btn btn--normal">5</button>
+    <button class="btn btn--normal">6</button>
+    <p class="esc">...</p>
+    <button class="btn btn--normal">23</button>
+
+    <button class="btn btn--right">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </button>
+  </body>
+</html>

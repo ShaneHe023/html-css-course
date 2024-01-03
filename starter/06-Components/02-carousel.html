@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Carousel Component</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .carousel{
+        width: 800px;
+        margin: 100px auto;
+        background-color: #087f5b;
+        /* padding: 32px;
+        padding-left: 86px;
+        padding-right: 48px; */
+        
+        /* top right bottom left */
+        padding: 32px 48px 32px 48px;
+        border-radius: 8px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 86px;
+      }
+      .testimonial-text{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e6fcf5;
+      }
+
+      .testimonial-author{
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #c3fae8;
+      }
+      .testimonial-job{
+        font-size: 12px;
+        color: #c3fae8;
+      }
+      
+      /* CONTROLS */
+      .btn{
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 12px 24px rgba(0,0,0,25%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .btn--left{
+        /* In relation to PARENT ELEMENT */
+        left: 0;
+        top: 50%;
+
+        /*In relation to ELEMENT ITSELF */
+        transform: translate(-50%, -50%);
+      }  
+
+      .btn--right{
+        right: 0;
+        /* 50% of parent container's height*/
+        top: 50%;
+        /* move X / Y value of the element's width/height*/
+        transform: translate(50%, -50%);
+      }
+
+      .btn-icon{
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+      .dots{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+
+        display: flex;
+        gap: 12px;
+      }
+      .dot{
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+        border: solid #087f5b;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dot--fill{
+        background-color: #087f5b;
+      }
+      img{
+        height: 200px;
+        border-radius: 8px;
+        /* scale up and down */
+        transform: scale(1.5);
+        box-shadow: 0 12px 24px rgba(0,0,0,25%);
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <div class="carousel">
+        <img src="maria.jpg" alt="Maria de Almeida" />
+        <blockquote class="testimonial">
+          <p class="testimonial-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident maxime perspiciatis aspernatur quis quibusdam recusandae nihil sit.</p>
+          <p class="testimonial-author">Maria de Almeida</p>
+          <p class="testimonial-job"> Senior Product Manager at EDP</p>
+        </blockquote>
+
+        <button class="btn btn--left"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+        </button>
+
+        <button class="btn btn--right">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+        </button>
+
+        <div class="dots">
+          <button class="dot dot--fill">
+            &nbsp; <!-- None breaking space -->
+          </button>
+          <button class="dot"> &nbsp;</button>
+          <button class="dot"> &nbsp;</button>
+          <button class="dot"> &nbsp;</button>
+        </div>
+      </div>
+  </body>
+</html>
